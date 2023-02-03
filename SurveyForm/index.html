@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <div class="form-bg">
+      <form action="" id="survey-form">
+        <section>
+          <label for="name" id="name-label"
+            >Name
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Enter your name.."
+          /></label>
+          <label for="email" id="email-label"
+            >Email
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Enter your email.."
+          /></label>
+          <label for="number" id="number-label"
+            >Age
+            <input
+              type="number"
+              id="number"
+              min="16"
+              max="100"
+              placeholder="Enter your age.."
+          /></label>
+        </section>
+        <section>
+          <label for="experience">
+            How many years of coding experience do you have?
+            <label for="experience-option-1"
+              ><input
+                type="radio"
+                name="experience-option"
+                id="experience-option-1"
+                class="inline"
+                value="0-2"
+              />0-2 years</label
+            >
+            <label for="experience-option-2"
+              ><input
+                type="radio"
+                name="experience-option"
+                id="experience-option-2"
+                class="inline"
+                value="3-5"
+              />3-5 years</label
+            >
+            <label for="experience-option-3"
+              ><input
+                type="radio"
+                name="experience-option"
+                id="experience-option-3"
+                class="inline"
+                value="6+"
+              />6+ years</label
+            >
+          </label>
+        </section>
+        <section>
+          <label for="dropdown" id="dropdown-label">
+            What is your favorite programming language?
+            <select name="dropdown" id="dropdown">
+              <option value="0">(select one)</option>
+              <option value="1">Python</option>
+              <option value="2">C#</option>
+              <option value="3">C++</option>
+              <option value="4">JavaScript</option>
+              <option value="5">TypeScript</option>
+            </select>
+          </label>
+        </section>
+        <section>
+          <label for="">
+            What type of development do you want to do?
+            <label for="dev-type"
+              ><input
+                id="dev-type"
+                type="checkbox"
+                value="front-end"
+                name="dev-type"
+              />Front-end</label
+            >
+            <label for=""
+              ><input
+                id="dev-type"
+                type="checkbox"
+                value="back-end"
+                name="dev-type"
+              />Back-end</label
+            >
+            <label for=""
+              ><input
+                id="dev-type"
+                type="checkbox"
+                value="full-stack"
+                name="dev-type"
+              />Full-stack</label
+            >
+          </label>
+        </section>
+        <section>
+          <label for="">
+            Additional Interests:
+            <textarea
+              name=""
+              id=""
+              cols="20"
+              rows="10"
+              placeholder="Enter more interests here.."
+            ></textarea>
+          </label>
+          <input type="submit" id="submit" />
+        </section>
+      </form>
+    </div>
+  </body>
+</html>
